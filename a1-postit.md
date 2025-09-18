@@ -28,7 +28,7 @@ Se debe desarrollar una página web interactiva que permita gestionar notas tipo
 
 * Eliminar una nota con un botón en la propia tarjeta.
 
-Requisitos técnicos:
+#### Requisitos técnicos:
 
 * HTML: estructura de la aplicación (formulario + tablero).
 
@@ -36,7 +36,7 @@ Requisitos técnicos:
 
 * JavaScript: manipulación del DOM, eventos, persistencia en `localStorage`.
 
-Trabajo en GitHub
+#### Trabajo en GitHub
 
 El trabajo colaborativo se gestionará con las herramientas de GitHub:
 
