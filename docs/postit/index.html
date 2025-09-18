@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Tablero de Post-it</title>
-  <style>
-    body{font-family:Arial,sans-serif;background:#f2f2f2;margin:0;padding:20px}
-    h1{text-align:center;margin-bottom:20px}
-    form{display:flex;justify-content:center;margin-bottom:20px}
-    textarea{width:300px;height:80px;padding:10px;font-size:14px;resize:none;border:2px solid #ccc;border-radius:5px;margin-right:10px}
-    button{padding:10px 20px;font-size:14px;border:none;border-radius:5px;background-color:#ffcc00;cursor:pointer;transition:background-color .2s ease}
-    button:hover{background-color:#ffdb4d}
-    #c{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:15px;max-width:1000px;margin:0 auto}
-    .n{background-color:#fffa86;padding:15px;border-radius:8px;box-shadow:2px 2px 5px rgba(0,0,0,.2);transform:rotate(-2deg);position:relative;word-wrap:break-word;min-height:80px}
-    .n:nth-child(even){background-color:#b3ffd9;transform:rotate(2deg)}
-    .n:nth-child(3n){background-color:#ffb3ba;transform:rotate(-1deg)}
-    .d{position:absolute;top:5px;right:8px;background:0 0;border:none;font-weight:700;cursor:pointer;color:#555}
-    .c{outline:0;width:100%;height:100%}
-  </style>
-</head>
-<body>
-  <h1>📌 Tablero de Post-it</h1>
-  <form id="a"><textarea id="b" placeholder="Escribe tu nota..."></textarea><button type="submit">Añadir</button></form>
-  <div id="c"></div>
-  <script>
-    (function(){
-      var f=document,g=JSON.parse(localStorage.getItem("n"))||[],h=f.getElementById("a"),i=f.getElementById("b"),j=f.getElementById("c");
-      function k(q){var r=f.createElement("div");r.className="n";var s=f.createElement("div");s.className="c";s.contentEditable="true";s.textContent=q;s.addEventListener("blur",l);var t=f.createElement("button");t.textContent="x";t.className="d";t.onclick=function(){j.removeChild(r);l()};r.appendChild(t);r.appendChild(s);j.appendChild(r)}
-      function l(){var m=[];f.querySelectorAll(".n .c").forEach(function(n){m.push(n.textContent)});localStorage.setItem("n",JSON.stringify(m))}
-      h.addEventListener("submit",function(o){o.preventDefault();var p=i.value.trim();if(p==="")return;k(p);l();i.value=""});
-      g.forEach(function(u){k(u)})
-    })();
-  </script>
-</body>
+<meta charset="UTF-8">
+<title>Tablero de Post-it</title>
+<style>
+  body{font-family:Arial,sans-serif;background:#f2f2f2;margin:0;padding:20px}
+  h1{text-align:center;margin-bottom:20px}
+  form{display:flex;justify-content:center;margin-bottom:20px}
+  textarea{width:300px;height:80px;padding:10px;font-size:14px;resize:none;border:2px solid #ccc;border-radius:5px;margin-right:10px}
+  button{padding:10px 20px;font-size:14px;border:none;border-radius:5px;background-color:#ffcc00;cursor:pointer;transition:background-color .2s ease}
+  button:hover{background-color:#ffdb4d}
+  #c{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:15px;max-width:1000px;margin:0 auto}
+  .n{background-color:#fffa86;padding:15px;border-radius:8px;box-shadow:2px 2px 5px rgba(0,0,0,.2);transform:rotate(-2deg);position:relative;word-wrap:break-word;min-height:80px}
+  .n:nth-child(even){background-color:#b3ffd9;transform:rotate(2deg)}
+  .n:nth-child(3n){background-color:#ffb3ba;transform:rotate(-1deg)}
+  .d{position:absolute;top:5px;right:8px;background:0 0;border:none;font-weight:700;cursor:pointer;color:#555}
+  .c{outline:0;width:80%;height:100%}
+</style>
+<h1>📌 Tablero de Post-it</h1>
+<form id="a"><textarea id="b" placeholder="Escribe tu nota..."></textarea><button type="submit">Añadir</button></form>
+<div id="c"></div>
+<script>
+  (function(){
+    var f=document,g=JSON.parse(localStorage.getItem("n"))||[],h=f.getElementById("a"),i=f.getElementById("b"),j=f.getElementById("c");
+    function k(q){var r=f.createElement("div");r.className="n";var s=f.createElement("div");s.className="c";s.contentEditable="true";s.textContent=q;s.addEventListener("blur",l);var t=f.createElement("button");t.textContent="x";t.className="d";t.onclick=function(){j.removeChild(r);l()};r.appendChild(t);r.appendChild(s);j.appendChild(r)}
+    function l(){var m=[];f.querySelectorAll(".n .c").forEach(function(n){m.push(n.textContent)});localStorage.setItem("n",JSON.stringify(m))}
+    h.addEventListener("submit",function(o){o.preventDefault();var p=i.value.trim();if(p==="")return;k(p);l();i.value=""});
+    g.forEach(function(u){k(u)})
+  })();
+</script>
 </html>
