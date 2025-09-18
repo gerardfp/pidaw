@@ -2,7 +2,9 @@
 ## Objetivo
 
 El objetivo de esta práctica es trabajar en equipo para desarrollar una aplicación web en entorno cliente utilizando HTML, CSS y JavaScript, aplicando buenas prácticas de colaboración en GitHub (Issues, Projects, Pull Requests y ramas).
-El resultado será un tablero de notas tipo post-it, donde el usuario pueda crear, visualizar, editar y eliminar notas, con persistencia en el navegador mediante localStorage.
+El resultado será un tablero de notas tipo post-it, donde el usuario pueda crear, visualizar, editar y eliminar notas, con persistencia en el navegador mediante `localStorage`.
+
+Se puede ver una demo **ORIENTATIVA** de la app a realizar aquí: https://gerardfp.github.io/pidaw/postit/
 
 Duración estimada: 3 horas.
 
