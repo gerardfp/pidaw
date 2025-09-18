@@ -1,3 +1,3 @@
 # pidaw
 
-ies bewnigasolo
+ies benigaslo
