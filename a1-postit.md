@@ -40,11 +40,11 @@ Trabajo en GitHub
 
 El trabajo colaborativo se gestionará con las herramientas de GitHub:
 
-* Issues: cada funcionalidad o tarea (HTML, estilos, añadir notas, editar, eliminar, persistencia) debe estar descrita en un Issue. Cada miembro del equipo debe asumir al menos un Issue.
+* **Issues**: cada funcionalidad o tarea (HTML, estilos, añadir notas, editar, eliminar, persistencia) debe estar descrita en un Issue. Cada miembro del equipo debe asumir al menos un Issue.
 
-* Projects: organizar las tareas en un tablero con columnas (por ejemplo: "Por hacer", "En progreso", "Hecho") e ir moviéndolas según el avance.
+* **Projects**: organizar las tareas en un tablero con columnas (por ejemplo: "Por hacer", "En progreso", "Hecho") e ir moviéndolas según el avance.
 
-* Ramas y Pull Requests:
+* **Ramas** y **Pull Requests**:
 
     * Cada tarea o funcionalidad debe desarrollarse en una rama distinta (ejemplo: feature-css, feature-add-note).
 
@@ -52,9 +52,9 @@ El trabajo colaborativo se gestionará con las herramientas de GitHub:
 
     * Otro miembro del equipo debe revisar y aprobar el código antes de fusionarlo.
 
-* Commits: deben ser frecuentes y con mensajes claros y descriptivos (por ejemplo: feat: añadir función para guardar notas en localStorage).
+* **Commits**: deben ser frecuentes y con mensajes claros y descriptivos (por ejemplo: feat: añadir función para guardar notas en `localStorage`).
 
-* Documentación: el repositorio debe incluir un archivo README.md con:
+* **Documentación**: el repositorio debe incluir un archivo `README.md` con:
 
     * Descripción del proyecto.
 
