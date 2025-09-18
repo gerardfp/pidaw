@@ -1,3 +1,5 @@
 # pidaw
 
-ies benigaslo ghfghfghfhg
+Projecte Intermodular DAW
+
+IES Benigaslo
