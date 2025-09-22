@@ -48,13 +48,13 @@ El trabajo colaborativo se gestionará con las herramientas de GitHub:
 
 * **Ramas** y **Pull Requests**:
 
-    * Cada tarea o funcionalidad debe desarrollarse en una rama distinta (ejemplo: feature-css, feature-add-note).
+    * Cada tarea o funcionalidad debe desarrollarse en una rama distinta (ejemplo: `feature-css`, `feature-add-note`).
 
     * Al terminar, se debe crear un Pull Request hacia la rama principal (main).
 
     * Otro miembro del equipo debe revisar y aprobar el código antes de fusionarlo.
 
-* **Commits**: deben ser frecuentes y con mensajes claros y descriptivos (por ejemplo: feat: añadir función para guardar notas en `localStorage`).
+* **Commits**: deben ser frecuentes y con mensajes claros y descriptivos (por ejemplo: "feat: añadir función para guardar notas en localStorage").
 
 * **Documentación**: el repositorio debe incluir un archivo `README.md` con:
 
